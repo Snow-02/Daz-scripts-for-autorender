@@ -1,0 +1,12 @@
+// DAZ Studio version 4.22.0.15 filetype DAZ Script
+
+// Define an anonymous function;
+// serves as our main loop,
+// limits the scope of variables
+(function(){
+	Scene.clear();
+	var newscene=Scene;
+	newscene.loadScene("D:/Daz3D/library/People/Genesis 9/Characters/Color Galeria/CGI Evander/CGI Evander Beard.duf","DzIncludeAllFlag");
+	
+// Finalize the function and invoke
+})();

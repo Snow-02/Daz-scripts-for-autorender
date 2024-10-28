@@ -1,0 +1,39 @@
+// DAZ Studio version 4.22.0.15 filetype DAZ Script
+
+(function(){
+	Scene.clear();
+	var oMyasset=App.getContentMgr ();
+	if(oMyasset){
+		debug("read successfully");}
+	oMyasset.openFile("D:/Daz3D/library/People/Genesis 9/Characters/RY Tiffany HD.duf");
+	oMyasset.openFile("D:/Daz3D/library/People/Genesis 9/Clothing/Otart/Triple Desire Set/Triple Desire Luxury Dress Assimetric.duf", merge=true);
+	oMyasset.openFile("D:/Daz3D/library/People/Genesis 9/Clothing/Otart/Triple Desire Set/Materials/Triple Desire Luxury Dress Assimetric Hot Pink.duf", merge=true);
+	oMyasset.openFile("D:/Daz3D/library/People/Genesis 9/Hair/Out Of Touch/OOT Shy Fringe Style Hair/Shy Fringe Style Hair Genesis 9.duf",merge=true);
+	oMyasset.openFile("D:/Daz3D/library/People/Genesis 9/Poses/3D Sugar/In Vogue/In Vogue Genesis 9 Base Feminine 22 Standing Legs Cross Hand On The Hip.duf",merge=true);
+	//var oMyfigure=Scene.get
+	var oExportMgr = App.getExportMgr();
+	// Define the class name the for Wavefront Object (*.obj) exporter
+	var sClassName = "DzObjExporter";
+	// Find the exporter
+	var oExporter = oExportMgr.findExporterByClassName( sClassName );
+	// If the exporter exists
+// If the exporter exists
+if( oExporter ){
+    // Create a settings object
+    var oSettings = new DzFileIOSettings();
+    
+    // Fill the settings object with the default options from the exporter
+    oExporter.getDefaultOptions( oSettings );
+
+    // Set to run silently (no dialog)
+    oSettings.setIntValue( "RunSilent", 1 );
+    
+    // Define the export path
+    var sExportPath = "D:/Codes/DAZ scripts/exports/try0.obj";  // 替换为你想要的导出路径
+    
+    // Write the file using the options specified
+    oExporter.writeFile( sExportPath, oSettings );
+    debug("export successfully");
+}
+
+})()

@@ -1,0 +1,12 @@
+// DAZ Studio version 4.22.0.15 filetype DAZ Script
+
+(function(){
+	Scene.clear();
+	var oMyasset=App.getContentMgr ();
+	if(oMyasset){
+		debug("read successfully");}
+	oMyasset.openFile("D:/Daz3D/library/People/Genesis 9/Genesis 9.duf");
+	oMyasset.openFile("D:/Daz3D/library/People/Genesis 9/Clothing/Otart/Triple Desire Set/Triple Desire Luxury Dress Assimetric.duf", merge=true);
+	oMyasset.openFile("D:/Daz3D/library/People/Genesis 9/Poses/3D Sugar/In Vogue/In Vogue Genesis 9 Base Feminine 22 Standing Legs Cross Hand On The Hip.duf",merge=true);
+	//var oMyfigure=Scene.get
+})()

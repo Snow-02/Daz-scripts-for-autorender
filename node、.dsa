@@ -1,0 +1,10 @@
+// DAZ Studio version 4.22.0.15 filetype DAZ Script
+
+(function(){
+	var anodes=Scene.getNodeList ();
+	debug(anodes.length);
+	var oRoot=anodes[0];
+	debug(oRoot.assetId);
+	var ske=oRoot.getSkeleton();
+	//var oMyfigure=Scene.get
+})()

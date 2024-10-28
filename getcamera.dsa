@@ -1,0 +1,14 @@
+// DAZ Studio version 4.23.0.1 filetype DAZ Script
+
+	// Get the viewport manager
+	var oViewportMgr = MainWindow.getViewportMgr()
+	
+	// Get the active viewport
+	var oViewport = oViewportMgr.getActiveViewport();
+	
+	// Get the 3D viewport
+	var o3DViewport = oViewport.get3DViewport();
+	
+	var oCamera = o3DViewport.getCamera();
+	
+	print(oCamera.aspectRatio)

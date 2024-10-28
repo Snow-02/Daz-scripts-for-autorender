@@ -1,0 +1,153 @@
+// DAZ Studio version 4.22.0.19 filetype DAZ Script
+
+// Define an anonymous function;
+// serves as our main loop,
+// limits the scope of variables
+(function(){
+	
+	// Get the primary selection to use for the file name
+	var oNode = Scene.getPrimarySelection();
+	// If something is selected
+	if( oNode ){
+		// Get the node's skeleton
+		var oSkeleton = oNode.getSkeleton();
+		// If it has a skeleton
+		if( oSkeleton )	{
+			// That is the node we want for the name
+			oNode = oSkeleton;
+		}
+	}
+	
+	// Get the export manager
+	var oExportMgr = App.getExportMgr();
+	// Define the class name the for Autodesk Filmbox (*.fbx) exporter
+	var sClassName = "DzFbxExporter";
+	// Find the exporter
+	var oExporter = oExportMgr.findExporterByClassName( sClassName );
+	// If the exporter exists
+	if( oExporter ){
+		// Create a settings object
+		var oSettings = new DzFileIOSettings();
+	
+		// Fill the settings object with the default options from the exporter
+		//oExporter.getDefaultOptions( oSettings );
+		
+		// Define whether or not to show options
+		var bShowOptions = true;
+		
+		// Define whether or not to show options before prompting for a path;
+		// requires 4.9.3.22 or later
+		var bOptionsBeforeFile = (bShowOptions && App.version64 >= 0x0004000900030016);
+		
+		// Get the options for the exporter
+		if( !oExporter.getOptions( oSettings, bShowOptions && bOptionsBeforeFile, "" ) ){
+			// We're done...
+			return;
+		}
+		
+		// Debug
+		//print( oSettings.toJsonString() );
+		
+		// Selected
+		oSettings.setBoolValue( "doSelected", false );
+		// No Hidden
+		oSettings.setBoolValue( "doVisible", false );
+		// Figures
+		oSettings.setBoolValue( "doFigures", true );
+		// Props
+		oSettings.setBoolValue( "doProps", false );
+		// Lights
+		oSettings.setBoolValue( "doLights", false );
+		// Cameras
+		oSettings.setBoolValue( "doCameras", false );
+		// Animations
+		oSettings.setBoolValue( "doAnims", false );
+		// Morphs
+		oSettings.setBoolValue( "doMorphs", false );
+		
+		// Morph Rules
+		// Format for rules is "Match1\nAction1\nMatch2\nAction2\nMatch3\nAction3",
+		// where Match# is a string to search for and Action# is one of Bake|Export|Ignore
+		// The names of the morphs are in the form: node_name.parameter_name
+		// The default action is to Bake
+		// So "FBMHeavy\nExport\nThin\nExport" would export all morphs that have FBMHeavy and all morphs that have Thin in the name
+		oSettings.setStringValue( "rules", "" );
+		
+		// Format
+		// Format for format is "Year# -- Type",
+		// where Year# is one of 2006|2009|2010|2011|2012|2013|2014 and
+		// Type is one of Ascii|Binary
+		oSettings.setStringValue( "format", "FBX 2012 -- Binary" );
+		
+		// Embed Textures
+		oSettings.setBoolValue( "doEmbed", true );
+		// Collect Textures To Folder
+		oSettings.setBoolValue( "doCopyTextures", false );
+		// Merge Diffuse and Opacity Textures
+		oSettings.setBoolValue( "doDiffuseOpacity", false );
+		// Merge Clothing Into Figure Skeleton
+		oSettings.setBoolValue( "doMergeClothing", false );
+		// Convert Clothing to Static Geometry
+		oSettings.setBoolValue( "doStaticClothing", false );
+		// Allow Degraded Skinning
+		oSettings.setBoolValue( "degradedSkinning", true );
+		// Allow Degraded Scaling
+		oSettings.setBoolValue( "degradedScaling", true );
+		// SubD Information
+		oSettings.setBoolValue( "doSubD", false );
+		// Collapse UV Tiles
+		oSettings.setBoolValue( "doCollapseUVTiles", false );
+		
+		// If the version is 4.9.3.22 or newer
+		if( App.version64 >= 0x0004000900030016 ){
+			// Define whether or not to show the options after prompting for a file;
+			// prior to 4.9.3.22 this exporter ignored this option entirely,
+			// running silent was implied by virtue of being run via script
+			oSettings.setIntValue( "RunSilent", (bShowOptions && !bOptionsBeforeFile ? 0 : 1) );
+		}
+		
+		// Debug
+		//print( oSettings.toJsonString() );
+		
+		// If we've got a node, construct the path using the
+		// exporter's last path, the node's name, and the
+		// exporter's extension...
+		// Otherwise, just use the exporter's last path
+		var sInitialPath = ( oNode ?
+				String( "%1/%2.%3" )
+					.arg( oExportMgr.getExportPath() )
+					.arg( oNode.name )
+					.arg( oExporter.getExtension() ) :
+				oExportMgr.getExportPath() );
+		
+		// Prompt the user to choose a file,
+		// use the exporter to build the title bar caption,
+		// the initial path and the filter
+		var sPath = FileDialog.doFileDialog( false,
+			String( "Custom Export : %1 : %2" )
+				.arg( oExporter.getDescription() )
+				.arg( oSettings.getStringValue( "Preset" ) ),
+			sInitialPath,
+			String( "%1 (*.%2)" )
+				.arg( oExporter.getDescription() )
+				.arg( oExporter.getExtension() ) );
+		
+		// If the user didn't cancel and the file doesn't already
+		// exist, or the user wants to overwrite it
+		if( sPath && MainWindow.checkExistingFile( sPath ) ){
+			// Write the file using the options specified
+			oExporter.writeFile( sPath, oSettings );
+		}
+		
+		// Clean up; don't leak memory
+		oExporter.deleteLater();
+	// We didn't find an exporter with the class name we wanted
+	} else {
+		// Inform the user
+		MessageBox.critical( qsTr("An exporter with the class name \"%1\" " +
+			"could not be found.").arg( sClassName ),
+			qsTr("Critical Error"), qsTr("&OK") );
+	}
+	
+// Finalize the function and invoke
+})();

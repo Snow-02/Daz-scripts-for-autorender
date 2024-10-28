@@ -1,0 +1,9 @@
+// DAZ Studio version 4.22.0.19 filetype DAZ Script
+
+var oRenderMgr = App.getRenderMgr();
+var Renderslist = oRenderMgr.getRendererList ();
+var oRender = Renderslist[0];
+var oRender2 = DzIrayRenderer ();
+	print(oRender2.getName());
+var rendersettings = DzRenderOptions ();
+oRenderMgr.doRender();

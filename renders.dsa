@@ -1,0 +1,7 @@
+// DAZ Studio version 4.22.0.19 filetype DAZ Script
+
+var oRenderMgr = App.getRenderMgr();
+var Renderslist = oRenderMgr.getRendererList ();
+for(var i =0;i<Renderslist.length;i++){
+	print(Renderslist[i].getName ());
+}

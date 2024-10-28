@@ -1,0 +1,46 @@
+// DAZ Studio version 4.22.0.15 filetype DAZ Script
+
+//D:\Daz3D\library\People\Genesis 9 Female\Characters\IST Rhea G9F.duf
+// 函数：导入文件并等待完成
+function importAndWait(filePath, parent) {
+    var fileInfo = new DzFileInfo(filePath);
+    if (!fileInfo.exists()) {
+        print("文件不存在: " + filePath);
+        return null;
+    }
+    
+    var newNode = Scene.loadItem(fileInfo);
+    if (newNode && parent) {
+        newNode.setParent(parent);
+    }
+    Scene.waitForIdle();
+    return newNode;
+}
+
+// 主程序
+try {
+    // 导入基础人物
+    var figure = importAndWait("D:\Daz3D\library\People\Genesis 9 Female\Characters\IST Rhea G9F.duf");
+    
+    if (!figure) {
+        print("无法导入人物");
+    } else {
+        // 为人物添加衣服
+        importAndWait("/路径/到/衣服1.duf", figure);
+        importAndWait("/路径/到/衣服2.duf", figure);
+        
+        // 调整人物姿势（可选）
+        importAndWait("/路径/到/姿势文件.duf", figure);
+
+        // 调整相机（可选）
+        var camera = Scene.getPrimaryCamera();
+        if (camera) {
+            camera.setRotation(new DzVec3(0, 180, 0));
+            camera.setTranslation(new DzVec3(0, 100, 300));
+        }
+
+        print("模型构建完成");
+    }
+} catch (error) {
+    print("发生错误: " + error);
+}

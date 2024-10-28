@@ -1,0 +1,13 @@
+// DAZ Studio version 4.22.0.19 filetype DAZ Script
+
+// Get the export manager
+	var oExportMgr = App.getExportMgr();
+	// Define the class name the for Autodesk Filmbox (*.fbx) exporter
+	var sClassName = "DzObjExporter";
+	// Find the exporter
+	var oExporter = oExportMgr.getExporter(0);
+	var onum = oExportMgr.getNumExporters()
+	if(oExporter){
+		debug("exporter exist!");
+		debug(oExporter.getDescription ());
+}
