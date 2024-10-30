@@ -1,0 +1,231 @@
+2024-10-29 22:56:32.694 [DEBUG] :: Executing Script...
+2024-10-29 22:56:32.695 [DEBUG] :: NVIDIA Iray
+2024-10-29 22:56:32.756 [INFO] :: Rendering image...
+2024-10-29 22:56:45.242 Iray [INFO] - TRAV:DATABASE ::   1.0   TRAV   db   progr: Traversing scene.
+2024-10-29 22:56:48.021 Iray [INFO] - TRAV:DATABASE ::   1.0   TRAV   db   info : Traversing scene took 2.779 s.
+2024-10-29 22:56:48.066 Iray (Scene Traversal) : Initializing update
+2024-10-29 22:56:48.066 Iray (Scene Traversal) : Retrieving journal and checking for changes
+2024-10-29 22:56:48.066 Iray (Scene Update) : Updating LPE labels
+2024-10-29 22:56:48.066 Iray (Scene Update) : Updating geometry contexts
+2024-10-29 22:56:48.066 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Updating geometry contexts.
+2024-10-29 22:56:48.066 Iray (Scene Update) : Updating geometry
+2024-10-29 22:56:48.066 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Updating geometry.
+2024-10-29 22:56:48.066 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Importing scene graph.
+2024-10-29 22:56:48.594 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Auto instancing compression 1.0x (Full instancing compression 1.0x)
+2024-10-29 22:56:48.594 Iray (Scene Update) : Retrieving geometry
+2024-10-29 22:56:48.594 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Importing geometry for motion time 0
+2024-10-29 22:56:49.321 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Geometry import (2 triangle objects with 30 M triangles, 2 instances yielding 30 M triangles) took 727.209 ms
+2024-10-29 22:56:49.321 Iray (Scene Update) : Updating motion transform data
+2024-10-29 22:56:49.321 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Updating motion transforms.
+2024-10-29 22:56:49.321 Iray (Scene Update) : Updating section objects
+2024-10-29 22:56:49.321 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Updating section objects.
+2024-10-29 22:56:49.321 Iray (Scene Update) : Updating materials
+2024-10-29 22:56:49.321 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Updating materials.
+2024-10-29 22:56:49.473 Iray [INFO] - MATCNV:RENDER ::   1.0   MATCNV rend info : Material instance 'DS_Side Braid Hair__Bangs_ba5_11205' uses MDL JIT compilation.
+2024-10-29 22:56:49.474 Iray [INFO] - MATCNV:RENDER ::   1.0   MATCNV rend info : Material instance 'DS_Side Braid Hair__Bangs_ba5_11205' uses MDL JIT compilation.
+2024-10-29 22:56:49.474 Iray [INFO] - MATCNV:RENDER ::   1.0   MATCNV rend info : Material instance 'DS_Side Braid Hair__Bangs_ba5_11205' uses MDL JIT compilation.
+2024-10-29 22:56:49.474 Iray [INFO] - MATCNV:RENDER ::   1.0   MATCNV rend info : Material instance 'DS_Side Braid Hair__Bangs_ba5_11205' uses MDL JIT compilation.
+2024-10-29 22:56:49.475 Iray [INFO] - MATCNV:RENDER ::   1.0   MATCNV rend info : Material instance 'DS_Side Braid Hair__BangsStrays_bc9_11248' uses MDL JIT compilation.
+2024-10-29 22:56:49.476 Iray [INFO] - MATCNV:RENDER ::   1.0   MATCNV rend info : Material instance 'DS_Side Braid Hair__BangsStrays_bc9_11248' uses MDL JIT compilation.
+2024-10-29 22:56:49.476 Iray [INFO] - MATCNV:RENDER ::   1.0   MATCNV rend info : Material instance 'DS_Side Braid Hair__BangsStrays_bc9_11248' uses MDL JIT compilation.
+2024-10-29 22:56:49.477 Iray [INFO] - MATCNV:RENDER ::   1.0   MATCNV rend info : Material instance 'DS_Side Braid Braid__Braid01_d0d_11638' uses MDL JIT compilation.
+2024-10-29 22:56:49.477 Iray [INFO] - MATCNV:RENDER ::   1.0   MATCNV rend info : Material instance 'DS_Side Braid Braid__Braid01_d0d_11638' uses MDL JIT compilation.
+2024-10-29 22:56:49.478 Iray [INFO] - MATCNV:RENDER ::   1.0   MATCNV rend info : Material instance 'DS_Side Braid Braid__Braid01_d0d_11638' uses MDL JIT compilation.
+2024-10-29 22:56:49.478 Iray [INFO] - MATCNV:RENDER ::   1.0   MATCNV rend info : found 189 textures, 50 lambdas (5 unique)
+2024-10-29 22:56:49.478 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Emitter geometry import (1 light source with 2 triangles, 1 instance) took 4.300 us
+2024-10-29 22:56:49.478 Iray (Scene Update) : Updating environment
+2024-10-29 22:56:49.478 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Updating environment.
+2024-10-29 22:56:49.480 Iray (Scene Update) : Updating code
+2024-10-29 22:56:49.480 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Updating compiled material code.
+2024-10-29 22:56:49.480 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Updating compiled environment code.
+2024-10-29 22:56:49.480 Iray (Scene Update) : Updating textures
+2024-10-29 22:56:49.480 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Updating material textures.
+2024-10-29 22:56:49.482 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Updating environment textures.
+2024-10-29 22:56:49.482 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Updating BSDFs.
+2024-10-29 22:56:49.482 Iray (Scene Update) : Updating volumes
+2024-10-29 22:56:49.482 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Updating volumes.
+2024-10-29 22:56:49.482 Iray (Scene Update) : Updating lens data
+2024-10-29 22:56:49.482 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Updating lens.
+2024-10-29 22:56:49.482 Iray (Scene Update) : Updating lights
+2024-10-29 22:56:49.482 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Updating lights.
+2024-10-29 22:56:49.482 Iray (Scene Update) : Updating instance topology
+2024-10-29 22:56:49.482 Iray (Scene Update) : Updating flags
+2024-10-29 22:56:49.482 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Updating object flags.
+2024-10-29 22:56:49.482 Iray (Scene Update) : Updating backplate
+2024-10-29 22:56:49.483 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Updating backplate.
+2024-10-29 22:56:49.483 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Updating compiled backplate code.
+2024-10-29 22:56:49.483 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Updating backplate textures.
+2024-10-29 22:56:49.483 Iray (Scene Update) : Updating decals
+2024-10-29 22:56:49.483 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Updating decals.
+2024-10-29 22:56:49.485 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Using iray core convergence estimate.
+2024-10-29 22:56:49.486 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Allocating 1-layer frame buffer
+2024-10-29 22:56:49.489 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Using batch scheduling, caustic sampler disabled
+2024-10-29 22:56:49.489 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Initializing local rendering.
+2024-10-29 22:56:49.490 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Initializing OptiX for CUDA device 0
+2024-10-29 22:56:49.723 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Initializing OptiX for CUDA device 1
+2024-10-29 22:56:49.918 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Rendering with 2 device(s):
+2024-10-29 22:56:49.918 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : 	CUDA device 0 (NVIDIA GeForce RTX 4090)
+2024-10-29 22:56:49.918 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : 	CUDA device 1 (NVIDIA GeForce RTX 4090)
+2024-10-29 22:56:49.918 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Rendering...
+2024-10-29 22:56:49.918 Iray [INFO] - IRAY:RENDER ::   1.49  IRAY   rend progr: CUDA device 0 (NVIDIA GeForce RTX 4090): Processing scene...
+2024-10-29 22:56:49.919 Iray [INFO] - IRAY:RENDER ::   1.11  IRAY   rend progr: CUDA device 1 (NVIDIA GeForce RTX 4090): Processing scene...
+2024-10-29 22:56:49.919 Iray (Scene Access) : Retrieving geometry
+2024-10-29 22:56:49.919 Iray (Scene Access) : Retrieving device geometry
+2024-10-29 22:56:50.350 Iray [INFO] - IRAY:RENDER ::   1.38  IRAY   rend info : Importing lights for motion time 0
+2024-10-29 22:56:50.350 Iray [INFO] - IRAY:RENDER ::   1.38  IRAY   rend info : Initializing light hierarchy.
+2024-10-29 22:56:50.351 Iray [INFO] - IRAY:RENDER ::   1.38  IRAY   rend info : Light hierarchy initialization took 399.600 us
+2024-10-29 22:56:50.408 Iray [INFO] - IRAY:RENDER ::   1.38  IRAY   rend info : JIT-linking wavefront kernel in 35.822 ms
+2024-10-29 22:56:50.413 Iray [INFO] - IRAY:RENDER ::   1.11  IRAY   rend info : CUDA device 1 (NVIDIA GeForce RTX 4090): Scene processed in 0.494s
+2024-10-29 22:56:50.416 Iray (Scene Access) : Retrieving volumes
+2024-10-29 22:56:50.416 Iray (Scene Access) : Retrieving textures
+2024-10-29 22:56:50.416 Iray (Scene Access) : Retrieving device textures
+2024-10-29 22:56:50.416 Iray [INFO] - IRAY:RENDER ::   1.11  IRAY   rend info : CUDA device 1 (NVIDIA GeForce RTX 4090): Allocated 18.854 MiB for frame buffer
+2024-10-29 22:56:50.417 Iray (Scene Access) : Retrieving flags
+2024-10-29 22:56:50.417 Iray (Scene Access) : Retrieving device flags
+2024-10-29 22:56:50.417 Iray [INFO] - IRAY:RENDER ::   1.11  IRAY   rend info : CUDA device 1 (NVIDIA GeForce RTX 4090): Allocated 2.094 GiB of work space (2048k active samples in 0.000s)
+2024-10-29 22:56:50.417 Iray (Scene Access) : Retrieving lights
+2024-10-29 22:56:50.417 Iray (Scene Access) : Retrieving device lights
+2024-10-29 22:56:50.417 Iray (Scene Access) : Retrieving section objects
+2024-10-29 22:56:50.417 Iray (Scene Access) : Retrieving device section objects
+2024-10-29 22:56:50.417 Iray (Scene Access) : Retrieving materials
+2024-10-29 22:56:50.417 Iray (Scene Access) : Compiling custom code
+2024-10-29 22:56:50.417 Iray (Scene Access) : Retrieving environment
+2024-10-29 22:56:50.417 Iray (Scene Access) : Retrieving device environment
+2024-10-29 22:56:50.418 Iray (Scene Access) : Retrieving backplate
+2024-10-29 22:56:50.418 Iray (Scene Access) : Retrieving device backplate
+2024-10-29 22:56:50.418 Iray (Scene Access) : Retrieving decals
+2024-10-29 22:56:50.418 Iray (Scene Access) : Retrieving device decals
+2024-10-29 22:56:50.418 Iray (Scene Access) : Retrieving motion transform data
+2024-10-29 22:56:50.418 Iray (Scene Access) : Retrieving device motion transform data
+2024-10-29 22:56:50.418 Iray (Scene Access) : Retrieving lens data
+2024-10-29 22:56:50.418 Iray (Scene Access) : Retrieving device lens data
+2024-10-29 22:56:50.430 Iray [INFO] - IRAY:RENDER ::   1.6   IRAY   rend info : JIT-linking wavefront kernel in 9.154 ms
+2024-10-29 22:56:50.430 Iray [INFO] - IRAY:RENDER ::   1.11  IRAY   rend info : Allocating 1-layer frame buffer
+2024-10-29 22:56:50.436 Iray [INFO] - IRAY:RENDER ::   1.49  IRAY   rend info : CUDA device 0 (NVIDIA GeForce RTX 4090): Scene processed in 0.517s
+2024-10-29 22:56:50.437 Iray [INFO] - IRAY:RENDER ::   1.49  IRAY   rend info : CUDA device 0 (NVIDIA GeForce RTX 4090): Allocated 18.854 MiB for frame buffer
+2024-10-29 22:56:50.437 Iray [INFO] - IRAY:RENDER ::   1.49  IRAY   rend info : CUDA device 0 (NVIDIA GeForce RTX 4090): Allocated 2.094 GiB of work space (2048k active samples in 0.000s)
+2024-10-29 22:56:50.437 Iray [INFO] - IRAY:RENDER ::   1.49  IRAY   rend info : CUDA device 0 (NVIDIA GeForce RTX 4090): Optimizing for cooperative usage (performance could be sacrificed)
+2024-10-29 22:56:50.438 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00001 iteration after 519.796 ms.
+2024-10-29 22:56:50.453 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00002 iterations after 534.766 ms.
+2024-10-29 22:56:50.456 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00003 iterations after 537.778 ms.
+2024-10-29 22:56:50.472 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00004 iterations after 553.316 ms.
+2024-10-29 22:56:50.493 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00006 iterations after 574.490 ms.
+2024-10-29 22:56:50.500 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00012 iterations after 581.721 ms.
+2024-10-29 22:56:50.523 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00016 iterations after 604.146 ms.
+2024-10-29 22:56:50.544 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00024 iterations after 625.933 ms.
+2024-10-29 22:56:50.573 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend progr: 85.92% of image converged
+2024-10-29 22:56:50.573 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00032 iterations after 654.802 ms.
+2024-10-29 22:56:50.609 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00045 iterations after 690.946 ms.
+2024-10-29 22:56:50.634 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00057 iterations after 715.815 ms.
+2024-10-29 22:56:50.692 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend progr: 89.86% of image converged
+2024-10-29 22:56:50.692 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00073 iterations after 773.438 ms.
+2024-10-29 22:56:50.715 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00088 iterations after 796.020 ms.
+2024-10-29 22:56:50.780 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend progr: 91.00% of image converged
+2024-10-29 22:56:50.780 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00106 iterations after 861.305 ms.
+2024-10-29 22:56:50.800 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00123 iterations after 881.094 ms.
+2024-10-29 22:56:50.871 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend progr: 91.88% of image converged
+2024-10-29 22:56:50.871 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00142 iterations after 952.135 ms.
+2024-10-29 22:56:50.891 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00160 iterations after 972.257 ms.
+2024-10-29 22:56:50.965 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend progr: 92.61% of image converged
+2024-10-29 22:56:50.965 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00180 iterations after 1.046 s.
+2024-10-29 22:56:50.985 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00199 iterations after 1.067 s.
+2024-10-29 22:56:51.143 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend progr: 93.51% of image converged
+2024-10-29 22:56:51.143 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00239 iterations after 1.224 s.
+2024-10-29 22:56:51.175 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend progr: 93.98% of image converged
+2024-10-29 22:56:51.175 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00277 iterations after 1.256 s.
+2024-10-29 22:56:51.334 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend progr: 94.40% of image converged
+2024-10-29 22:56:51.334 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00320 iterations after 1.416 s.
+2024-10-29 22:56:51.371 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend progr: 94.81% of image converged
+2024-10-29 22:56:51.371 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00360 iterations after 1.453 s.
+2024-10-29 22:56:51.528 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend progr: 95.24% of image converged
+2024-10-29 22:56:51.528 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00404 iterations after 1.610 s.
+2024-10-29 22:56:51.532 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend progr: Convergence threshold reached.
+2024-10-29 22:56:51.824 [INFO] :: Saved image: C:\Users\pjoffice\AppData\Roaming\DAZ 3D\Studio4\temp\render\r.png
+2024-10-29 22:56:51.824 [INFO] :: Finished rendering.
+2024-10-29 22:56:51.853 [INFO] :: Total Rendering Time: 19.15 seconds
+2024-10-29 22:56:51.860 [INFO] :: Loaded image: r.png
+2024-10-29 22:56:51.868 [INFO] :: Saved image: C:\Users\pjoffice\AppData\Roaming\DAZ 3D\Studio4\temp\RenderAlbumTmp\Render 5.jpg
+2024-10-29 22:56:51.870 [DEBUG] :: Result: true
+2024-10-29 22:56:51.870 [DEBUG] :: Script executed in 19 secs 175 msecs.
+2024-10-29 22:56:52.414 Iray [INFO] - TRAV:DATABASE ::   1.0   TRAV   db   progr: Updating scene.
+2024-10-29 22:56:52.479 Iray [INFO] - TRAV:DATABASE ::   1.0   TRAV   db   info : Updating scene took 65.486 ms.
+2024-10-29 22:56:52.480 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Updating geometry.
+2024-10-29 22:56:52.484 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Importing scene graph.
+2024-10-29 22:56:52.496 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Auto instancing compression 1.0x (Full instancing compression 1.0x)
+2024-10-29 22:56:52.496 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Importing geometry for motion time 0
+2024-10-29 22:56:52.528 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Geometry import (1 triangle object with 933 k triangles, 1 instance yielding 933 k triangles; 13 fiber objects with 12705 fibers (499 k segments), 13 instances yielding 499 k segments) took 31.435 ms
+2024-10-29 22:56:52.528 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Updating motion transforms.
+2024-10-29 22:56:52.528 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Updating materials.
+2024-10-29 22:56:52.535 Iray [INFO] - MATCNV:RENDER ::   1.0   MATCNV rend info : Material instance 'DS_Side Braid Hair__Bangs_ba5_12211' uses MDL JIT compilation.
+2024-10-29 22:56:52.536 Iray [INFO] - MATCNV:RENDER ::   1.0   MATCNV rend info : Material instance 'DS_Side Braid Hair__Bangs_ba5_12211' uses MDL JIT compilation.
+2024-10-29 22:56:52.537 Iray [INFO] - MATCNV:RENDER ::   1.0   MATCNV rend info : Material instance 'DS_Side Braid Hair__Bangs_ba5_12211' uses MDL JIT compilation.
+2024-10-29 22:56:52.537 Iray [INFO] - MATCNV:RENDER ::   1.0   MATCNV rend info : Material instance 'DS_Side Braid Hair__Bangs_ba5_12211' uses MDL JIT compilation.
+2024-10-29 22:56:52.538 Iray [INFO] - MATCNV:RENDER ::   1.0   MATCNV rend info : Material instance 'DS_Side Braid Hair__BangsStrays_bc9_12256' uses MDL JIT compilation.
+2024-10-29 22:56:52.538 Iray [INFO] - MATCNV:RENDER ::   1.0   MATCNV rend info : Material instance 'DS_Side Braid Hair__BangsStrays_bc9_12256' uses MDL JIT compilation.
+2024-10-29 22:56:52.539 Iray [INFO] - MATCNV:RENDER ::   1.0   MATCNV rend info : Material instance 'DS_Side Braid Hair__BangsStrays_bc9_12256' uses MDL JIT compilation.
+2024-10-29 22:56:52.539 Iray [INFO] - MATCNV:RENDER ::   1.0   MATCNV rend info : Material instance 'DS_Side Braid Braid__Braid01_d0d_12670' uses MDL JIT compilation.
+2024-10-29 22:56:52.540 Iray [INFO] - MATCNV:RENDER ::   1.0   MATCNV rend info : Material instance 'DS_Side Braid Braid__Braid01_d0d_12670' uses MDL JIT compilation.
+2024-10-29 22:56:52.540 Iray [INFO] - MATCNV:RENDER ::   1.0   MATCNV rend info : Material instance 'DS_Side Braid Braid__Braid01_d0d_12670' uses MDL JIT compilation.
+2024-10-29 22:56:52.540 Iray [INFO] - MATCNV:RENDER ::   1.0   MATCNV rend info : found 189 textures, 50 lambdas (5 unique)
+2024-10-29 22:56:52.540 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Emitter geometry import (1 light source with 2 triangles, 1 instance) took 4.000 us
+2024-10-29 22:56:52.541 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Updating compiled material code.
+2024-10-29 22:56:52.541 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Updating material textures.
+2024-10-29 22:56:52.543 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Updating BSDFs.
+2024-10-29 22:56:52.543 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Updating volumes.
+2024-10-29 22:56:52.543 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Updating lights.
+2024-10-29 22:56:52.543 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Updating object flags.
+2024-10-29 22:56:52.544 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Updating decals.
+2024-10-29 22:56:52.544 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Allocating 1-layer frame buffer
+2024-10-29 22:56:52.544 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Using interactive scheduling, caustic sampler disabled
+2024-10-29 22:56:52.545 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Rendering with 2 device(s):
+2024-10-29 22:56:52.545 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : 	CUDA device 0 (NVIDIA GeForce RTX 4090)
+2024-10-29 22:56:52.545 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : 	CUDA device 1 (NVIDIA GeForce RTX 4090)
+2024-10-29 22:56:52.545 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Rendering...
+2024-10-29 22:56:52.545 Iray [INFO] - IRAY:RENDER ::   1.49  IRAY   rend progr: CUDA device 0 (NVIDIA GeForce RTX 4090): Processing scene...
+2024-10-29 22:56:52.546 Iray [INFO] - IRAY:RENDER ::   1.11  IRAY   rend progr: CUDA device 1 (NVIDIA GeForce RTX 4090): Processing scene...
+2024-10-29 22:56:52.571 Iray [INFO] - IRAY:RENDER ::   1.6   IRAY   rend info : Importing lights for motion time 0
+2024-10-29 22:56:52.571 Iray [INFO] - IRAY:RENDER ::   1.6   IRAY   rend info : Initializing light hierarchy.
+2024-10-29 22:56:52.571 Iray [INFO] - IRAY:RENDER ::   1.6   IRAY   rend info : Light hierarchy initialization took 389.400 us
+2024-10-29 22:56:52.573 Iray [INFO] - IRAY:RENDER ::   1.11  IRAY   rend info : CUDA device 1 (NVIDIA GeForce RTX 4090): Scene processed in 0.028s
+2024-10-29 22:56:52.574 Iray [INFO] - IRAY:RENDER ::   1.6   IRAY   rend info : CUDA device 1 (NVIDIA GeForce RTX 4090): Allocated 916.414 KiB for frame buffer
+2024-10-29 22:56:52.575 Iray [INFO] - IRAY:RENDER ::   1.11  IRAY   rend info : CUDA device 1 (NVIDIA GeForce RTX 4090): Allocated 2.094 GiB of work space (2048k active samples in 0.000s)
+2024-10-29 22:56:52.580 Iray [INFO] - IRAY:RENDER ::   1.49  IRAY   rend info : CUDA device 0 (NVIDIA GeForce RTX 4090): Scene processed in 0.034s
+2024-10-29 22:56:52.580 Iray [INFO] - IRAY:RENDER ::   1.38  IRAY   rend info : CUDA device 0 (NVIDIA GeForce RTX 4090): Allocated 916.414 KiB for frame buffer
+2024-10-29 22:56:52.580 Iray [INFO] - IRAY:RENDER ::   1.49  IRAY   rend info : CUDA device 0 (NVIDIA GeForce RTX 4090): Allocated 2.094 GiB of work space (2048k active samples in 0.000s)
+2024-10-29 22:56:52.580 Iray [INFO] - IRAY:RENDER ::   1.49  IRAY   rend info : CUDA device 0 (NVIDIA GeForce RTX 4090): Optimizing for cooperative usage (performance could be sacrificed)
+2024-10-29 22:56:52.587 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00001 iteration after 38.906 ms.
+2024-10-29 22:56:52.588 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Rendering...
+2024-10-29 22:56:52.601 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00003 iterations after 46.241 ms.
+2024-10-29 22:56:52.602 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Rendering...
+2024-10-29 22:56:52.611 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00007 iterations after 52.708 ms.
+2024-10-29 22:56:52.612 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Rendering...
+2024-10-29 22:56:52.627 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00015 iterations after 67.046 ms.
+2024-10-29 22:56:52.628 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Rendering...
+2024-10-29 22:56:52.640 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00024 iterations after 77.808 ms.
+2024-10-29 22:56:52.640 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Rendering...
+2024-10-29 22:56:52.655 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00039 iterations after 91.965 ms.
+2024-10-29 22:56:52.656 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Rendering...
+2024-10-29 22:56:52.671 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00057 iterations after 106.403 ms.
+2024-10-29 22:56:52.671 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Rendering...
+2024-10-29 22:56:52.687 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00078 iterations after 121.340 ms.
+2024-10-29 22:56:52.687 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Rendering...
+2024-10-29 22:56:52.705 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00102 iterations after 137.493 ms.
+2024-10-29 22:56:52.705 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Rendering...
+2024-10-29 22:56:52.723 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00127 iterations after 153.856 ms.
+2024-10-29 22:56:52.723 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Rendering...
+2024-10-29 22:56:52.740 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00153 iterations after 169.654 ms.
+2024-10-29 22:56:52.740 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Rendering...
+2024-10-29 22:56:52.758 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00181 iterations after 186.471 ms.
+2024-10-29 22:56:52.758 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Rendering...
+2024-10-29 22:56:52.777 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00209 iterations after 205.474 ms.
+2024-10-29 22:56:52.794 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00239 iterations after 222.480 ms.
+2024-10-29 22:56:52.811 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00268 iterations after 239.323 ms.
+2024-10-29 22:56:52.828 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00298 iterations after 256.271 ms.
+2024-10-29 22:56:52.845 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00327 iterations after 273.338 ms.
+2024-10-29 22:56:52.861 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00356 iterations after 289.671 ms.
+2024-10-29 22:56:52.878 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00386 iterations after 306.410 ms.
+2024-10-29 22:56:52.894 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00416 iterations after 322.804 ms.
+2024-10-29 22:56:52.911 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00447 iterations after 339.815 ms.
+2024-10-29 22:56:52.928 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00478 iterations after 356.235 ms.
+2024-10-29 22:56:52.946 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend info : Received update to 00500 iterations after 373.913 ms.
+2024-10-29 22:56:52.946 Iray [INFO] - IRAY:RENDER ::   1.0   IRAY   rend progr: Maximum number of samples reached.

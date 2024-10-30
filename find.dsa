@@ -1,0 +1,20 @@
+// DAZ Studio version 4.22.0.15 filetype DAZ Script
+
+var oRenderMgr = App.getRenderMgr();
+// find iray render
+var oRenderer = oRenderMgr.findRenderer( "DzIrayRenderer" );
+var oSettings;
+var oSubSettings;
+oSettings = new DzSettings();
+// 配置基本连接参数
+		oSettings.setIntValue( "Connection", 0);
+		oSettings.setStringValue( "Username", "admin" );           // 服务器登录用户名
+		oSettings.setStringValue( "Password", "idcirayserver" );   // 服务器登录密码
+		oRenderer.setBridgeConfiguration( oSettings );
+print(oSettings.toJsonString ())
+var renderProp = oRenderer.getPropertyHolder();
+print(renderProp.	getLabel ());
+print(renderProp. getNumPrivateProperties());
+//print(renderProp. getProperty(1).getLabel());
+var args = oRenderer.setBridgeConfiguration.arguments;
+print(args.length);
