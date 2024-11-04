@@ -1,18 +1,3 @@
-/**********************************************************************
- 
-	This script is provided as part of the Daz Script Documentation. The
-	contents of this script, and\or any portion thereof, may only be used
-	in accordance with the following license:
- 
-	Creative Commons Attribution 3.0 Unported (CC BY 3.0)
-	- http://creativecommons.org/licenses/by/3.0
- 
-	To contact Daz 3D or for more information about Daz Script visit the
-	Daz 3D website:
- 
-	- http://www.daz3d.com
- 
-**********************************************************************/
 // Source: http://docs.daz3d.com/doku.php/public/software/dazstudio/4/referenceguide/scripting/api_reference/samples/rendering/render_settings_find_property/start
 
 // Define an anonymous function;
@@ -22,6 +7,10 @@
 	
 	/*********************************************************************/
 	// Array<DzProperty> : A function for getting a list of the properties in a group
+	// Parameters:
+	// oGroup - The group object
+	// bTraverse - Whether to traverse sibling groups
+	// bRecurse - Whether to recurse child groups
 	function getGroupProperties( oGroup, bTraverse, bRecurse )
 	{
 		// Declare an array to hold properties
@@ -63,6 +52,10 @@
 	
 	/*********************************************************************/
 	// Array<DzProperty> : A function for getting the list properties for an element
+	// Parameters:
+	// oElement - The target element
+	// bTraverse - Whether to traverse sibling groups
+	// bRecurse - Whether to recurse child groups
 	function getElementProperties( oElement, bTraverse, bRecurse )
 	{
 		// Get the property group tree for the element
@@ -82,6 +75,10 @@
 	
 	/*********************************************************************/
 	// DzProperty : A function for finding a property associated with an element
+	// Parameters:
+	// oElement - The target element
+	// sProperty - The property name
+	// bUseLabel - Whether to use the label to find the property
 	function findElementProperty( oElement, sProperty, bUseLabel )
 	{
 		// Whether or not to use optimizations; 4.7.1.44 or newer
@@ -181,6 +178,12 @@
 	
 	/*********************************************************************/
 	// DzProperty : A function to find a property associated with a renderer
+	// Parameters:
+	// sRenderer - The renderer name
+	// sElement - The element name
+	// sProperty - The property name
+	// bUseLabel - Whether to use the label to find the property
+	// bActivate - Whether to activate the renderer
 	function findRendererProperty( sRenderer, sElement, sProperty, bUseLabel, bActivate )
 	{
 		// Get the render manager

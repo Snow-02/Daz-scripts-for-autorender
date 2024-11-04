@@ -1,71 +1,4 @@
-// DAZ Studio version 4.5.0.53 filetype DAZ Script
 
-// Define an anonymous function;
-// serves as our main loop,
-// limits the scope of variables
-(function(){
-	
-	// Initialize 'static' variables that hold modifier key state
-	var s_bShiftPressed = false;
-	var s_bControlPressed = false;
-	var s_bAltPressed = false;
-	var s_bMetaPressed = false;
-	
-	// If the "Action" global transient is defined, and its the correct type
-	if( typeof( Action ) != "undefined" && Action.inherits( "DzScriptAction" ) ){
-		// If the current key sequence for the action is not pressed
-		if( !App.isKeySequenceDown( Action.shortcut ) ){
-			updateModifierKeyState();
-		}
-	// If the "Action" global transient is not defined
-	} else if( typeof( Action ) == "undefined" ) {
-		updateModifierKeyState();
-	}
-	
-	/*********************************************************************/
-	// void : A function for updating the keyboard modifier state
-	function updateModifierKeyState()
-	{
-		// Get the current modifier key state
-		var nModifierState = App.modifierKeyState();
-		// Update variables that hold modifier key state
-		s_bShiftPressed = (nModifierState & 0x02000000) != 0;
-		s_bControlPressed = (nModifierState & 0x04000000) != 0;
-		s_bAltPressed = (nModifierState & 0x08000000) != 0;
-		s_bMetaPressed = (nModifierState & 0x10000000) != 0;
-	};
-	
-	/*********************************************************************/
-	// void : A function for printing only if debugging
-	function debug()
-	{
-		// If we are not debugging
-		if( !s_bAltPressed ){
-			// We are done...
-			return;
-		}
-		
-		// Convert the arguments object into an array
-		var aArguments = [].slice.call( arguments );
-		
-		// Print the array
-		print( aArguments.join(" ") );
-	};
-	
-	/*********************************************************************/
-	// String : A function for retrieving a translation if one exists
-	function text( sText )
-	{
-		// If the version of the application supports qsTr()
-		if( typeof( qsTr ) != "undefined" ){
-			// Return the translated (if any) text
-			return qsTr( sText );
-		}
- 
-		// Return the original text
-		return sText;
-	};
-	
 	/*********************************************************************/
 	// Get the render manager
 	var oRenderMgr = App.getRenderMgr();
@@ -108,18 +41,26 @@
 	}
 	
 	// Initialize a variable for the file name
-	var sFilename = "D:/RenderResult/1/2125.jpg";
+	var sFilename = "";
 	
 	// If the render options indicate we are rendering to file
 	if( oRenderOptions.renderImgToId == DzRenderOptions.DirectToFile ){
 		// Create a file info object for easy file related operations
 		var oFileInfo = new DzFileInfo( oRenderOptions.renderImgFilename );
 		
-		// If we have a base name
-		if( !oFileInfo.baseName().isEmpty() ){
-			// Set the file name to the one specified by render options
-			oRenderOptions.renderImgFilename = sFilename;
-		}
+var dirpath = "D:/RenderResult/";
+var Id = 1;
+var nview = 3;
+// 创建ID文件夹路径
+var idFolder = dirpath + Id + "/";
+// 确保ID文件夹存在
+var dir = new DzDir(idFolder);
+if (!dir.exists()) {
+    dir.mkpath(idFolder);
+}
+// 直接使用nview作为文件名，添加.png后缀
+var sFilename = idFolder + nview + ".png";
+
 	}
 	
 	// If we do not have a file name
@@ -129,7 +70,7 @@
 	}
 	
 	// Provide feedback
-	debug( "File:", sFilename );
+	print( "File:", sFilename );
 	
 	// Get the viewport manager
 	var oViewportMgr = MainWindow.getViewportMgr()
@@ -153,12 +94,12 @@
 	var nFrameAspect = nFrameWidth / nFrameHeight;
 	
 	// Provide feedback
-	debug( "Frame:" );
-	debug( "X: ", rectFrame.x );
-	debug( "Y: ", rectFrame.y );
-	debug( "W: ", nFrameWidth );
-	debug( "H: ", nFrameHeight );	
-	debug( "A: ", nFrameAspect, ": 1" );
+	print( "Frame:" );
+	print( "X: ", rectFrame.x );
+	print( "Y: ", rectFrame.y );
+	print( "W: ", nFrameWidth );
+	print( "H: ", nFrameHeight );	
+	print( "A: ", nFrameAspect, ": 1" );
 	
 	// Constrain the aspect
 	oRenderOptions.isAspectConstrained = true;
@@ -174,7 +115,18 @@
 	
 	// Update the image size for the render settings...
 	// This causes the Render Settings > Dimensions to be updated
-	oRenderOptions.imageSize = new Size( nFrameWidth, nFrameHeight );
+	var targetSize = 2048;
+	var newWidth, newHeight;
+
+	if (nFrameWidth >= nFrameHeight) {
+		newWidth = targetSize;
+		newHeight = Math.round(targetSize / nFrameAspect);
+	} else {
+		newHeight = targetSize;
+		newWidth = Math.round(targetSize * nFrameAspect);
+	}
+
+	oRenderOptions.imageSize = new Size(newWidth, newHeight);
 	
 	// We should only render the current frame to the viewport
 	oRenderOptions.isCurrentFrameRender = true;
@@ -218,5 +170,3 @@
 	oRenderOptions.imageSize = sizeImage;
 	oRenderOptions.setAspectRatio( nAspectWidth, nAspectHeight );
 	
-// Finalize the function and invoke
-})();

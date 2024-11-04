@@ -108,7 +108,7 @@
 	}
 	
 	// Initialize a variable for the file name
-	var sFilename = "D:/RenderResult/1/2125.jpg";
+	var sFilename = "";
 	
 	// If the render options indicate we are rendering to file
 	if( oRenderOptions.renderImgToId == DzRenderOptions.DirectToFile ){
@@ -118,7 +118,7 @@
 		// If we have a base name
 		if( !oFileInfo.baseName().isEmpty() ){
 			// Set the file name to the one specified by render options
-			oRenderOptions.renderImgFilename = sFilename;
+			sFilename = oRenderOptions.renderImgFilename;
 		}
 	}
 	

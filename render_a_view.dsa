@@ -5,5 +5,28 @@ var Renderslist = oRenderMgr.getRendererList ();
 var oRender = Renderslist[0];
 var oRender2 = DzIrayRenderer ();
 	print(oRender2.getName());
-var rendersettings = DzRenderOptions ();
-oRenderMgr.doRender();
+var dirpath = "D:/RenderResult/";
+var Id = 1;
+var nview = 3;
+// 创建ID文件夹路径
+var idFolder = dirpath + Id + "/";
+// 确保ID文件夹存在
+var dir = new DzDir(idFolder);
+if (!dir.exists()) {
+    dir.mkpath(idFolder);
+}
+// 直接使用nview作为文件名，添加.png后缀
+var sFilename = idFolder + nview + ".png";
+
+var rendersettings = oRenderMgr.getRenderOptions();
+rendersettings.renderImgToId = DzRenderOptions.DirectToFile;
+var oFileInfo = new DzFileInfo( oRenderOptions.renderImgFilename );
+    
+    // 如果有基本文件名
+    if( !oFileInfo.baseName().isEmpty() ){
+        // 设置文件名为渲染选项中指定的文件名
+        sFilename = oRenderOptions.renderImgFilename;
+    }
+// 输出调试信息
+print( "File:", sFilename );
+oRenderMgr.doRender(rendersettings);

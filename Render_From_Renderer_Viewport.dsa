@@ -1,3 +1,4 @@
+
 // DAZ Studio version 4.5.0.53 filetype DAZ Script
 
 // Define an anonymous function;
@@ -36,21 +37,6 @@
 	};
 	
 	/*********************************************************************/
-	// void : A function for printing only if debugging
-	function debug()
-	{
-		// If we are not debugging
-		if( !s_bAltPressed ){
-			// We are done...
-			return;
-		}
-		
-		// Convert the arguments object into an array
-		var aArguments = [].slice.call( arguments );
-		
-		// Print the array
-		print( aArguments.join(" ") );
-	};
 	
 	/*********************************************************************/
 	// String : A function for retrieving a translation if one exists
@@ -118,7 +104,7 @@
 		// If we have a base name
 		if( !oFileInfo.baseName().isEmpty() ){
 			// Set the file name to the one specified by render options
-			oRenderOptions.renderImgFilename = sFilename;
+			oRenderOptions.renderImgFilename  = sFilename;
 		}
 	}
 	
@@ -129,7 +115,7 @@
 	}
 	
 	// Provide feedback
-	debug( "File:", sFilename );
+	print( "File:", sFilename );
 	
 	// Get the viewport manager
 	var oViewportMgr = MainWindow.getViewportMgr()
@@ -146,19 +132,20 @@
 	// but the render is relative to the aspect rect,
 	// so we need to move the rect by the inverse offset
 	rectFrame.moveBy( -rectFrame.x, -rectFrame.y );
-	
+	rectFrame.width = 2048;
+	rectFrame.height = rectFrame.width/
 	// Get the width, height and aspect of the frame
 	var nFrameWidth = rectFrame.width;
 	var nFrameHeight = rectFrame.height;
 	var nFrameAspect = nFrameWidth / nFrameHeight;
 	
 	// Provide feedback
-	debug( "Frame:" );
-	debug( "X: ", rectFrame.x );
-	debug( "Y: ", rectFrame.y );
-	debug( "W: ", nFrameWidth );
-	debug( "H: ", nFrameHeight );	
-	debug( "A: ", nFrameAspect, ": 1" );
+	print( "Frame:" );
+	print( "X: ", rectFrame.x );
+	print( "Y: ", rectFrame.y );
+	print( "W: ", nFrameWidth );
+	print( "H: ", nFrameHeight );	
+	print( "A: ", nFrameAspect, ": 1" );
 	
 	// Constrain the aspect
 	oRenderOptions.isAspectConstrained = true;
