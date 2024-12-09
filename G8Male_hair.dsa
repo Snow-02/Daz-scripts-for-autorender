@@ -1,0 +1,22 @@
+// DAZ Studio version 4.23.0.1 filetype DAZ Script
+
+var hair = [
+        "D:/Daz3D/G8Content/People/Genesis 8 Male/Hair/dForce Arix Hair/dForce Arix Hair - High Res.duf",
+        "D:/Daz3D/G8Content/People/Genesis 8 Male/Hair/dForce Corporate Hair/dForce Corporate Hair G8M.duf",
+        "D:/Daz3D/G8Content/People/Genesis 8 Male/Hair/dForce Greyson Hair/Greyson Hair.duf",
+        "D:/Daz3D/G8Content/People/Genesis 8 Male/Hair/dforce Mid-Life Bachelor Hair/dforce Mid-Life Bachelor Hair.duf",
+        "D:/Daz3D/G8Content/People/Genesis 8 Male/Hair/dForce Romeo Hair/dForce Romeo Hair G8M.duf",
+        "D:/Daz3D/G8Content/People/Genesis 8 Male/Hair/FE Short Hair Vol 2/FE Short Hair Vol 2 Male Hairline 1.duf",
+        "D:/Daz3D/G8Content/People/Genesis 8 Male/Hair/FE Short Hair Vol 2/FE Short Hair Vol 2 Male Hairline 5.duf",
+        "D:/Daz3D/G8Content/People/Genesis 8 Male/Hair/Jian Hair/Jian Hair Genesis 8 Male.duf",
+        "D:/Daz3D/G8Content/People/Genesis 8 Male/Hair/LI Crew Cut Hair/LI Crew Cut Hair.duf",
+        "D:/Daz3D/G8Content/People/Genesis 8 Male/Hair/Matthew Hair/Matthew Hair For Genesis 8 Male.duf",
+        "D:/Daz3D/G8Content/People/Genesis 8 Male/Hair/Nathan Fade Haircut and Beard/Nathan Fade Haircut G8M.duf",
+        "D:/Daz3D/G8Content/People/Genesis 8 Male/Hair/Nikan Hair and Beard/Nikan - Hair.duf",
+        "D:/Daz3D/G8Content/People/Genesis 8 Male/Hair/Nikan Hair and Beard/Nikan Hair & Beard.duf",
+        "D:/Daz3D/G8Content/People/Genesis 8 Male/Hair/Orson Hair/Orson Hair.duf",
+        "D:/Daz3D/G8Content/People/Genesis 8 Male/Hair/Osher Hair/Osher Hair.duf",
+        "D:/Daz3D/G8Content/People/Genesis 8 Male/Hair/The Alchemist/Alchemist Hair and Beard/ALC !Hair & Beard Preset G8M.duf",
+        "D:/Daz3D/G8Content/People/Genesis 8 Male/Hair/The Alchemist/Alchemist Hair and Beard/Alchemist !Face Hair Preset G8M.duf",
+        "D:/Daz3D/G8Content/People/Genesis 8 Male/Hair/The Alchemist/Alchemist Hair and Beard/Alchemist Hair.duf"
+]
