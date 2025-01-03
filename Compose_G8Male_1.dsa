@@ -552,11 +552,14 @@ function export_to_blender (){
                     print("read successfully");
                 }
                 // open figure
-                oMyasset.openFile(figures[i]);
+                Scene.loadScene(figures[i],"DzIncludeAllFlag");
+                //oMyasset.openFile(figures[i]);
                 // open cloth
-                oMyasset.openFile(clothes[j], merge=true);
+                Scene.loadScene(clothes[j],"DzIncludeAllFlag");
+                //oMyasset.openFile(clothes[j], merge=true);
                 // open hair
-                oMyasset.openFile(hair[k], merge=true);
+                Scene.loadScene(hair[k],"DzIncludeAllFlag");
+                //oMyasset.openFile(hair[k], merge=true);
 
                 var oNode = Scene.getPrimarySelection();
 
