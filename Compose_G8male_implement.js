@@ -569,8 +569,7 @@ function export_to_blender (){
                         oNode = oSkeleton;
                     }
                 }
-                var sum = i + j + k;
-                dufpath = outputPath + "model_" + i + j + k + "/"+ "model_" + i + j + k + ".duf";
+                dufpath = outputPath + "model_" + i + "_" + j + "_" + k + "/"+ "model_" + i + "_" + j + "_" + k + ".duf";
                 Scene.saveScene(dufpath);
                 print("Saved " + i + j + k +"model in" + dufpath);
                 // Export to Blender
