@@ -535,15 +535,21 @@ function export_to_blender (){
         "D:/Daz3D/G8Content/People/Genesis 8 Male/Hair/The Alchemist/Alchemist Hair and Beard/Alchemist Hair.duf"
 	]
 	// set output path
-	var outputPath = "E:/DazExport/G8export/0-1999/";
+	var outputPath = "E:/DazExport/G8export/2k-4k/";
 	if(!DzDir(outputPath).exists()){
         DzDir("").mkpath(outputPath)
 	}
 	var dufpath;
 	//
-	for (var i = 0; i < 2; i++) {
-        for (var j = 0; j < 2; j++) {
-            for (var k = 0; k < 2; k++) {
+	for (var i = 14; i < 18; i++) {
+        for (var j =0; j < clothes.length; j++) {
+            for (var k = 7; k < 11; k++) {
+                dufpath = outputPath + "model_" + i + "_" + j + "_" + k + "/"+ "model_" + i + "_" + j + "_" + k + ".duf";
+                //Restart from the interrupted point
+                if(DzFile(dufpath).exists()){
+                    print("file exists");
+                    continue;
+                }
                 // clear scene
                 Scene.clear();
                 // get content manager
@@ -569,7 +575,6 @@ function export_to_blender (){
                         oNode = oSkeleton;
                     }
                 }
-                dufpath = outputPath + "model_" + i + "_" + j + "_" + k + "/"+ "model_" + i + "_" + j + "_" + k + ".duf";
                 Scene.saveScene(dufpath);
                 print("Saved " + i + j + k +"model in" + dufpath);
                 // Export to Blender
