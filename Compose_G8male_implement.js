@@ -535,7 +535,7 @@ function export_to_blender (){
         "D:/Daz3D/G8Content/People/Genesis 8 Male/Hair/The Alchemist/Alchemist Hair and Beard/Alchemist Hair.duf"
 	]
 	// set output path
-	var outputPath = "D:/DazExport/G8export/0-1999/";
+	var outputPath = "E:/DazExport/G8export/0-1999/";
 	if(!DzDir(outputPath).exists()){
         DzDir("").mkpath(outputPath)
 	}
@@ -552,13 +552,13 @@ function export_to_blender (){
                     print("read successfully");
                 }
                 // open figure
-                Scene.loadScene(figures[i],MergeFile);
+                Scene.loadScene(figures[i],"MergeFile");
                 //oMyasset.openFile(figures[i]);
                 // open cloth
-                Scene.loadScene(clothes[j],MergeFile);
+                Scene.loadScene(clothes[j],"MergeFile");
                 //oMyasset.openFile(clothes[j], merge=true);
                 // open hair
-                Scene.loadScene(hair[k],MergeFile);
+                Scene.loadScene(hair[k],"MergeFile");
                 //oMyasset.openFile(hair[k], merge=true);
 
                 var oNode = Scene.getPrimarySelection();
